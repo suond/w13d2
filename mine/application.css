@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flagged {
+    border-style: inset;
+    background: white;
+}
+
+
+.bombed {
+    border-style: inset;
+    
+}
+.row{
+    margin: 0, auto;
+    display: flex;
+    justify-content: center;
+}
+.tile {
+    width: 20px;
+    height: 20px;
+    background: lightgray;
+    border-style: outset;
+    display: inline-block;
+    text-align: center;
+}
+.revealed {
+    border-style: inset;
+    background: white;
+}
+
+.modal-screen{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content{
+    position: absolute;
+    z-index: 1000;
+
+    top: 50%;
+    left: 50%;
+
+    width: 400px;
+    padding: 50px;
+
+    margin-left: -250px;
+    transform: translateY(-50%);
+
+    background: white;
+    border-radius: 5px;
+}
+
+.dx:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.is-active{
+    display: block
+}
